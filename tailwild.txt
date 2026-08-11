@@ -1,0 +1,14 @@
+<script src="https://cdn.tailwindcss.com"></script>:
+ Esta é a parte mais importante! É o Play CDN do Tailwind exigido pelo professor. Ele carrega todo o mecanismo do Tailwind diretamente na página sem precisar instalar nada via terminal.
+
+<body class="bg-slate-900 text-white min-h-screen flex flex-col justify-between font-sans">
+
+bg-slate-900: Define uma cor de fundo azul-escuro/grafite (Slate 900).
+
+text-white: Deixa todo o texto padrão na cor branca.
+
+min-h-screen: Garante que a página ocupe no mínimo 100% da altura da tela do dispositivo.
+
+flex flex-col justify-between: Usa o modelo Flexbox para alinhar os elementos em coluna e empurrar o rodapé (footer) para o final da tela.
+
+font-sans: Aplica uma fonte moderna sem serifa (como Arial ou Inter).
