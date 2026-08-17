@@ -9,6 +9,7 @@ A principal finalidade do Tailwind CSS é dar velocidade, padronização e facil
 Curiosidades interessantes sobre elementos utilizados durante o trabalho:
 
 A tag "pre" cria o "quadro estilo terminal" onde o código de exemplo fica visível para quem está assistindo à apresentação.
+
 No HTML, para exibir o caractere de menor < e maior > como texto na tela (sem o navegador achar que é uma tag de verdade), usamos as entidades:
 
 &lt; = < (Less Than)
@@ -21,7 +22,7 @@ Meta para as seções: </p>
    <li>História;</li>
   <li>Evolução;</li>
    <li>Por quê usar?;</li>
-   <li></li>
-   <li></li>
-   <li></li>
+   <li>Exemplos de Uso;</li>
+   <li>Venda e Suporte</li>
+   <li>Integrantes;</li>
 </ul>
