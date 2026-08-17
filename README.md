@@ -8,7 +8,7 @@ Na prática, isso significa que você constrói o design do seu site montando "b
 A principal finalidade do Tailwind CSS é dar velocidade, padronização e facilidade de manutenção ao desenvolvimento web. Ele impede que você use cores ou espaçamentos desalinhados, pois disponibiliza uma escala de design padronizada e harmoniosa. Além disso, ele elimina o medo de alterar o visual de um elemento e acabar desconfigurando outro lugar do site, já que cada conjunto de classes utilitárias afeta apenas a tag HTML onde foi inserido. Em resumo, o Tailwind serve para acelerar a criação de interfaces modernas, mantendo o código organizado e extremamente fácil de personalizar.
 Curiosidades interessantes sobre elementos utilizados durante o trabalho:
 
-A tag <pre> cria o "quadro estilo terminal" onde o código de exemplo fica visível para quem está assistindo à apresentação.
+A tag "pre" cria o "quadro estilo terminal" onde o código de exemplo fica visível para quem está assistindo à apresentação.
 No HTML, para exibir o caractere de menor < e maior > como texto na tela (sem o navegador achar que é uma tag de verdade), usamos as entidades:
 
 &lt; = < (Less Than)
