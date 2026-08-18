@@ -26,3 +26,22 @@ Meta para as seções: </p>
    <li>Venda e Suporte</li>
    <li>Integrantes;</li>
 </ul>
+
+ideias para o site:
+colocar que ele ficou popular nos ultimos 2 anos
+ele é mais flexivel que os outros (da mais liberdade)
+feedback
+comunidade
+talvez trocar palheta (se tiver alguma melhor)
+traduzir css para tailwind
+
+
+A documentação é dividida em partes essenciais para o desenvolvimento:
+
+    Getting Started (Primeiros Passos): Guias de instalação para frameworks e ferramentas comuns (Next.js, Vite, Laravel, Remix, etc.).
+
+    Core Concepts (Conceitos Básicos): Explicações sobre como funciona a abordagem utility-first, design tokens, responsividade, estados (hover, focus) e suporte a modo escuro (dark mode).
+
+    Customization (Personalização): Como estender o arquivo de configuração (tailwind.config.js) para adicionar cores personalizadas, fontes, espaçamentos e breakpoints.
+
+    Componentes / UI: Referência ao ecossistema oficial (como o Tailwind UI) e bibliotecas de componentes.
