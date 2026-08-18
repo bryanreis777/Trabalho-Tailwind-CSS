@@ -92,7 +92,7 @@
                             <span>Por quê usar?</span>
                         </a>
 
-                       
+
 
                         <a href="#exemplos"
                             class="flex items-center gap-3 px-4 py-3 text-xs text-purple-200 hover:bg-purple-950/80 hover:text-pink-400 transition-colors">
@@ -116,7 +116,7 @@
 
             </nav>
 
-            <a href="#contato"
+            <a href="htmls/solicitar.html"
                 class=" text-white font-bold py-2 px-4 rounded-lg text-sm shadow-lg shadow-pink-500/20 transition-all transform hover:-translate-y-0.5 inline-flex items-center justify-center gap-2">
                 Contratar Suporte
             </a>
@@ -185,22 +185,24 @@
 
         <section id="porque" class="py-16 border-b border-purple-900/30">
             <div class="w-[80%] mx-auto px-4">
-                <h2 class="border-b border-gray-300 text-3xl font-bold text-white text-center mb-[60px] pb-4">POR QUÊ USAR ?
+                <h2 class="border-b border-gray-300 text-3xl font-bold text-white text-center mb-[60px] pb-4">POR QUÊ
+                    USAR ?
                 </h2>
 
             </div>
         </section>
-        
+
 
         <section id="exemplos" class="py-16 bg-[#130f24]/60 border-b border-purple-900/30">
             <div class="w-[80%] mx-auto px-4">
-                <h2 class="border-b border-gray-300 text-3xl font-bold text-white text-center mb-[60px] pb-4">EXEMPLOS DE USO
+                <h2 class="border-b border-gray-300 text-3xl font-bold text-white text-center mb-[60px] pb-4">EXEMPLOS
+                    DE USO
                 </h2>
 
             </div>
         </section>
 
-         <section id="exemplos" class="py-16 bg-[#130f24]/60 border-b border-purple-900/30">
+        <section id="exemplos" class="py-16 bg-[#130f24]/60 border-b border-purple-900/30">
             <div class="w-[80%] mx-auto px-4">
                 <h2 class="border-b border-gray-300 text-3xl font-bold text-white text-center mb-[60px] pb-4">COMUNIDADE
                 </h2>
@@ -220,7 +222,7 @@
                         <div class="text-2xl font-bold text-indigo-300 my-4">R$ 490/mês</div>
                         <p class="text-xs text-purple-200/70 mb-6">Acompanhamento e suporte técnico de código para sua
                             equipe no uso do Tailwind.</p>
-                        <a href="#contato"
+                        <a href="htmls/solicitar.html"
                             class="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold py-2.5 px-4 rounded-xl text-sm transition-all inline-flex items-center justify-center gap-2 w-full">Contratar
                             Mentoria</a>
                     </div>
@@ -231,7 +233,7 @@
                         <div class="text-2xl font-bold text-pink-400 my-4">R$ 1.800</div>
                         <p class="text-xs text-purple-200/70 mb-6">Criação ou migração completa de um site legado para a
                             estrutura Tailwind CSS.</p>
-                        <a href="#contato"
+                        <a href="htmls/solicitar.html"
                             class="bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-400 hover:to-rose-400 text-white font-bold py-2.5 px-4 rounded-xl text-sm shadow-lg shadow-pink-500/30 transition-all inline-flex items-center justify-center gap-2 w-full">Solicitar
                             Proposta</a>
                     </div>
@@ -242,7 +244,7 @@
                         <div class="text-2xl font-bold text-indigo-300 my-4">R$ 3.500</div>
                         <p class="text-xs text-purple-200/70 mb-6">Padronização visual e criação de biblioteca de
                             componentes reutilizáveis.</p>
-                        <a href="#contato"
+                        <a href="htmls/solicitar.html"
                             class="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold py-2.5 px-4 rounded-xl text-sm transition-all inline-flex items-center justify-center gap-2 w-full">Falar
                             com Consultor</a>
                     </div>
@@ -250,78 +252,96 @@
             </div>
         </section>
 
-        <section id="contato" class="py-16 bg-[#130f24]/60 border-b border-purple-900/30">
-            <div class="w-[80%] mx-auto px-4 max-w-xl">
-                <div class="bg-purple-950/50 border border-indigo-500/40 p-8 rounded-2xl relative shadow-2xl">
-                    <h2 class="text-2xl font-bold text-white text-center mb-6 tracking-wide">Solicitar Suporte Comercial
-                    </h2>
-
-                    <form class="space-y-4"
-                        onsubmit="event.preventDefault(); alert('Solicitação enviada com sucesso!');">
-
-
-                        <div>
-                            <input type="text" id="nome" name="nome" placeholder="Seu Nome / Empresa" required
-                                class="w-full bg-[#0f0c1b] border border-purple-800/60 rounded-xl px-4 py-3 text-sm text-purple-100 ">
-                        </div>
-
-
-                        <div>
-                            <input type="email" id="email" name="email" placeholder="Seu E-mail" required
-                                 class="w-full bg-[#0f0c1b] border border-purple-800/60 rounded-xl px-4 py-3 text-sm text-purple-100 ">
-                        </div>
-
-
-                        <div>
-                            <select id="servico" name="servico"
-                                 class="w-full bg-[#0f0c1b] border border-purple-800/60 rounded-xl px-4 py-3 text-sm text-purple-100 ">
-                                <option class="bg-[#0f0c1b]" value="mentoria">Mentoria Dev (R$ 490/mês)</option>
-                                <option class="bg-[#0f0c1b]" value="migracao">Migração de Site (R$ 1.800)</option>
-                                <option class="bg-[#0f0c1b]" value="design-system">Design System (R$ 3.500)</option>
-                            </select>
-                        </div>
-
-
-                        <div>
-                            <textarea id="mensagem" name="mensagem" rows="3" placeholder="Detalhes do seu projeto..."
-                                class="w-full bg-[#0f0c1b] border border-purple-800/60 rounded-xl px-4 py-3 text-sm text-purple-100  resize-none"></textarea>
-                        </div>
-
-
-                        <button type="submit"
-                            class="bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-400 hover:to-rose-400 text-white font-bold py-3 px-4 rounded-xl text-sm shadow-lg shadow-pink-500/25 transition-all transform hover:-translate-y-0.5 inline-flex items-center justify-center gap-2 w-full cursor-pointer">
-                            Enviar Mensagem
-                        </button>
-
-                    </form>
-                </div>
-            </div>
-        </section>
-
         
+
+
 
 
     </div>
 
 
 
-    <section id="referencias" class="py-12 bg-[#0d0a17]">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h2 class="text-xl font-bold text-white mb-6">Referências Bibliográficas</h2>
-            <div class="flex flex-wrap justify-center gap-6 text-xs text-purple-300/70">
-                <a href="https://tailwindcss.com/docs" target="_blank"
-                    class="hover:text-pink-400 underline">Documentação Oficial (tailwindcss.com)</a>
-                <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank"
-                    class="hover:text-pink-400 underline">Repositório GitHub (Tailwind Labs)</a>
-                <a href="https://tailwindcss.com/blog" target="_blank" class="hover:text-pink-400 underline">Blog
-                    Oficial Tailwind Labs</a>
-            </div>
-        </div>
-    </section>
+   
 
-    <footer class="bg-[#090710] py-8 text-center text-xs text-purple-300/50 border-t border-purple-950">
+    <footer class="bg-[#0f0c1b] text-purple-200 border-t border-purple-900/40 py-12 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+
+
+            <div class="space-y-4">
+
+                <div class="flex items-center gap-3">
+                    <img src="img/Tailwind_CSS_Logo.svg.webp" alt="logo" class="w-10 h-10 object-contain">
+
+                    <div>
+                        <h2 class="text-xl font-bold text-white tracking-wide leading-none">TAILWINDCSS</h2>
+                        <h3 class="text-sm font-bold text-pink-500 tracking-wide mt-1">SERVIÇOS</h3>
+                    </div>
+                </div>
+
+                <p class="text-xs text-purple-300/70 max-w-xs leading-relaxed">
+                    Sempre buscando a eficiência prática e assistencial.
+                </p>
+
+                <ul class="space-y-2 text-sm font-medium">
+                    <li><a href="#home" class="hover:text-pink-400 transition-colors">Home</a></li>
+                    <li><a href="#introducao" class="hover:text-pink-400 transition-colors">Introdução</a>
+                    </li>
+                    <li><a href="htmls/solicitar.html"
+                            class="hover:text-pink-400 transition-colors">Contratar Suporte</a></li>
+                </ul>
+            </div>
+
+            
+            <div>
+                <h3 class="text-sm font-bold text-pink-500 mb-4">Páginas de Suporte</h3>
+                <ul class="space-y-2.5 text-sm font-medium text-purple-300/80">
+                    <li><a href="suporte.html/cookies.html" class="hover:text-pink-400 transition-colors">Política de
+                            Cookies</a></li>
+                    <li><a href="suporte.html/uso.html" class="hover:text-pink-400 transition-colors">Termos de uso</a>
+                    </li>
+                    <li><a href="suporte.html/politica.html" class="hover:text-pink-400 transition-colors">Políticas de
+                            privacidade</a></li>
+
+                    <li><a href="suporte.html/desenvolvedores.html" class="hover:text-pink-400 transition-colors">Sobre
+                            os desenvolvedores</a></li>
+                </ul>
+            </div>
+
+            
+            <div id="referencias" class="space-y-4">
+                <h3 class="text-sm font-bold text-pink-500">Referências Bibliográficas</h3>
+
+                
+                <ul class="space-y-2.5 text-sm font-medium">
+                    <li>
+                        <a href="https://tailwindcss.com/docs" target="_blank"
+                            class="hover:text-pink-400 transition-colors">
+                            Documentação Oficial (tailwindcss.com)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank"
+                            class="hover:text-pink-400 transition-colors">
+                            Repositório GitHub (Tailwind Labs)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://tailwindcss.com/blog" target="_blank"
+                            class="hover:text-pink-400 transition-colors">
+                            Blog Oficial Tailwind Labs
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
         
-        <p class="mt-2">&copy; 2026 Grupo 2 - IFTM Campus Patrocínio. Desenvolvido com Play CDN e Tailwind CSS.</p>
+        <div
+            class="max-w-7xl mx-auto pt-6 border-t border-purple-900/30 flex justify-center items-center gap-6 text-xs text-purple-400/60">
+            <p>Copyright © - TailWindCSS</p>
+            <p>IFTM 2026</p>
+        </div>
     </footer>
 
 </body>
