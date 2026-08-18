@@ -12,3 +12,127 @@ min-h-screen: Garante que a página ocupe no mínimo 100% da altura da tela do d
 flex flex-col justify-between: Usa o modelo Flexbox para alinhar os elementos em coluna e empurrar o rodapé (footer) para o final da tela.
 
 font-sans: Aplica uma fonte moderna sem serifa (como Arial ou Inter).
+
+comunidade:
+
+ <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white text-center mb-12">2. Comunidade & Motivação para Uso</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-purple-950/40 border border-indigo-500/30 p-8 rounded-2xl">
+                    <div
+                        class="w-12 h-12 bg-pink-500/10 text-pink-400 rounded-xl flex items-center justify-center text-xl font-bold mb-4 border border-pink-500/30">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Adocão Global</h3>
+                    <p class="text-purple-200/80 text-sm leading-relaxed mb-4">
+                        Com milhões de downloads semanais no NPM, o Tailwind é adotado pelas maiores empresas de
+                        tecnologia do mundo, garantindo suporte ativo de ecossistema.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 bg-purple-900/50 text-xs text-purple-200 rounded-lg border border-purple-700/50">OpenAI</span>
+                        <span
+                            class="px-3 py-1 bg-purple-900/50 text-xs text-purple-200 rounded-lg border border-purple-700/50">Vercel</span>
+                        <span
+                            class="px-3 py-1 bg-purple-900/50 text-xs text-purple-200 rounded-lg border border-purple-700/50">Shopify</span>
+                        <span
+                            class="px-3 py-1 bg-purple-900/50 text-xs text-purple-200 rounded-lg border border-purple-700/50">GitHub</span>
+                    </div>
+                </div>
+
+                <div id="motivacao" class="bg-purple-950/40 border border-indigo-500/30 p-8 rounded-2xl">
+                    <div
+                        class="w-12 h-12 bg-indigo-500/20 text-indigo-300 rounded-xl flex items-center justify-center text-xl font-bold mb-4 border border-indigo-500/30">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Por que foi criado?</h3>
+                    <p class="text-purple-200/80 text-sm leading-relaxed">
+                        A motivação principal foi acabar com o CSS tradicional caótico, onde desenvolvedores gastavam
+                        horas inventando nomes de classes CSS e gerenciando arquivos gigantescos cheios de código
+                        duplicado e regras conflitantes.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        pre: 
+        
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white text-center mb-12">3. Vantagens & Exemplos de Usabilidade</h2>
+
+            <div class="grid md:grid-cols-4 gap-6 mb-12">
+                <div
+                    class="bg-purple-950/30 p-6 rounded-xl border border-indigo-500/20 hover:border-pink-500/50 transition-colors">
+                    <i class="fa-solid fa-bolt text-pink-400 text-2xl mb-3"></i>
+                    <h4 class="font-bold text-white mb-1">Motor JIT</h4>
+                    <p class="text-xs text-purple-200/70">Gera apenas as classes CSS que são realmente utilizadas.</p>
+                </div>
+                <div
+                    class="bg-purple-950/30 p-6 rounded-xl border border-indigo-500/20 hover:border-pink-500/50 transition-colors">
+                    <i class="fa-solid fa-palette text-indigo-400 text-2xl mb-3"></i>
+                    <h4 class="font-bold text-white mb-1">Design Customizável</h4>
+                    <p class="text-xs text-purple-200/70">Sem modelos engessados ou parecidos com outros sites.</p>
+                </div>
+                <div
+                    class="bg-purple-950/30 p-6 rounded-xl border border-indigo-500/20 hover:border-pink-500/50 transition-colors">
+                    <i class="fa-solid fa-mobile-screen text-pink-400 text-2xl mb-3"></i>
+                    <h4 class="font-bold text-white mb-1">Responsividade</h4>
+                    <p class="text-xs text-purple-200/70">Prefixos nativos como sm:, md: e lg: no HTML.</p>
+                </div>
+                <div
+                    class="bg-purple-950/30 p-6 rounded-xl border border-indigo-500/20 hover:border-pink-500/50 transition-colors">
+                    <i class="fa-solid fa-sliders text-indigo-400 text-2xl mb-3"></i>
+                    <h4 class="font-bold text-white mb-1">Manutenibilidade</h4>
+                    <p class="text-xs text-purple-200/70">Mudanças de estilo sem medo de quebrar outras páginas.</p>
+                </div>
+            </div>
+
+            <div id="exemplos" class="bg-purple-950/40 border border-purple-800/40 rounded-2xl p-6 sm:p-8">
+                <h3 class="text-xl font-bold text-white mb-6 text-center">Exemplo Prático: CSS Tradicional vs Tailwind
+                    CSS</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <span
+                            class="text-xs font-bold text-red-400 bg-red-500/10 px-3 py-1 rounded-full border border-red-500/20">Modo
+                            Tradicional</span>
+                        <pre class="mt-3 bg-[#090710] p-4 rounded-xl text-xs text-red-300 font-mono overflow-x-auto">
+/* style.css */
+.meu-botao {
+  background-color: #6366f1;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+.meu-botao:hover {
+  background-color: #ec4899;
+}</pre>
+                    </div>
+                    <div>
+                        <span
+                            class="text-xs font-bold text-pink-400 bg-pink-500/10 px-3 py-1 rounded-full border border-pink-500/20">Abordagem
+                            Tailwind CSS</span>
+                        <pre class="mt-3 bg-[#090710] p-4 rounded-xl text-xs text-pink-300 font-mono overflow-x-auto">
+&lt;!-- index.html --&gt;
+&lt;button class="bg-indigo-600 
+               hover:bg-pink-500 
+               text-white py-3 px-6 
+               rounded-lg transition-all"&gt;
+  Clique Aqui
+&lt;/button&gt;</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        potencial :
+
+         <div class="flex justify-center gap-4 flex-wrap">
+                <a href="#servicos"
+                    class="bg-gradient-to-r from-indigo-600 to-pink-500 hover:from-indigo-500 hover:to-pink-400 text-white font-bold py-3 px-6 rounded-xl text-sm shadow-lg shadow-pink-500/20 transition-all transform hover:-translate-y-0.5 inline-flex items-center justify-center gap-2">
+                    ....
+                </a>
+                <a href="#historico"
+                    class="bg-purple-950/60 hover:bg-purple-900/60 text-purple-200 border border-purple-500/40 hover:border-pink-500/60 font-semibold px-6 py-3 rounded-xl transition-all inline-flex items-center justify-center gap-2">
+                    ....
+                </a>
+            </div>

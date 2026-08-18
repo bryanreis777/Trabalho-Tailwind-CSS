@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind CSS - Apresentação Especializada | Grupo 2</title>
-     <link rel="icon" type="image/x-icon" href="img/Tailwind_CSS_Logo.svg.webp">
-    <script src="https://cdn.tailwindcss.com"></script>     
-    
+    <title>Tailwind CSS</title>
+    <link rel="icon" type="image/x-icon" href="img/Tailwind_CSS_Logo.svg.webp">
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <script>
         tailwind.config = {
             theme: {
@@ -27,103 +28,121 @@
             }
         }
     </script>
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body class="bg-[#0f0c1b] text-purple-100 font-sans antialiased selection:bg-pink-500 selection:text-white">
 
     <header class="sticky top-0 z-50 backdrop-blur-md bg-[#0f0c1b]/80 border-b border-purple-900/40">
         <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-            
+
             <div class="flex items-center gap-3">
-                
-                   <a href="#home"><img  class="w-16" src="img/Tailwind_CSS_Logo.svg.webp" alt="imagem da logo"></a>
-                
+
+                <a href="#home"><img class="w-16" src="img/Tailwind_CSS_Logo.svg.webp" alt="imagem da logo"></a>
+
                 <div>
                     <span class="font-bold text-3xl  text-white ">Tailwind<span class="text-pink-500">CSS</span></span>
-                    
+
                 </div>
             </div>
 
-           <nav class="hidden md:flex items-center gap-6">
+            <nav class="hidden md:flex items-center gap-6">
 
-    
-    <div class="relative group">
-        <button class="flex items-center gap-2 py-2 px-3 text-sm font-medium text-purple-200 hover:text-pink-400 transition-colors">
-            <img src="img/procurar.svg" alt="Ícone Introdução" class=" brightness-0 invert w-4 h-4 shrink-0 object-contain">
-            <span>Sobre</span>
-            <i class="fa-solid fa-chevron-down text-[10px] text-indigo-400 transition-transform duration-200 group-hover:rotate-180"></i>
-        </button>
 
-        
-        <div class="absolute left-0 top-full mt-1 w-64 bg-[#130f24] border border-purple-900/50 rounded-xl shadow-2xl shadow-purple-950 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
-            
-            <a href="#introducao" class="flex items-center gap-3 px-4 py-3 text-xs text-purple-200 hover:bg-purple-950/80 hover:text-pink-400 border-b border-purple-900/30 transition-colors">
-                <img src="img/documento.svg" alt="Ícone Introdução" class=" brightness-0 invert w-4 h-4 shrink-0 object-contain">
-                <span>Introdução</span>
-            </a>
+                <div class="relative group">
+                    <button
+                        class="flex items-center gap-2 py-2 px-3 text-sm font-medium text-purple-200 hover:text-pink-400 transition-colors">
+                        <img src="img/procurar.svg" alt="Ícone Introdução"
+                            class=" brightness-0 invert w-4 h-4 shrink-0 object-contain">
+                        <span>Sobre</span>
+                        <i
+                            class="fa-solid fa-chevron-down text-[10px] text-indigo-400 transition-transform duration-200 group-hover:rotate-180"></i>
+                    </button>
 
-            <a href="#historia" class="flex items-center gap-3 px-4 py-3 text-xs text-purple-200 hover:bg-purple-950/80 hover:text-pink-400 border-b border-purple-900/30 transition-colors">
-                <img src="img/lampada.svg" alt="Ícone História" class="brightness-0 invert w-4 h-4 shrink-0 object-contain">
-                <span>História</span>
-            </a>
 
-            <a href="#evolucao" class="flex items-center gap-3 px-4 py-3 text-xs text-purple-200 hover:bg-purple-950/80 hover:text-pink-400 border-b border-purple-900/30 transition-colors">
-                <img src="img/grafico-histograma.svg" alt="Ícone Evolução" class="brightness-0 invert w-4 h-4 shrink-0 object-contain">
-                <span>Evolução</span>
-            </a>
+                    <div
+                        class="absolute left-0 top-full mt-1 w-64 bg-[#130f24] border border-purple-900/50 rounded-xl shadow-2xl shadow-purple-950 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
 
-            <a href="#porque" class="flex items-center gap-3 px-4 py-3 text-xs text-purple-200 hover:bg-purple-950/80 hover:text-pink-400 border-b border-purple-900/30 transition-colors">
-                <img src="img/computador.svg" alt="Ícone Por que usar" class="brightness-0 invert w-4 h-4 shrink-0 object-contain">
-                <span>Por quê usar?</span>
-            </a>
+                        <a href="#introducao"
+                            class="flex items-center gap-3 px-4 py-3 text-xs text-purple-200 hover:bg-purple-950/80 hover:text-pink-400 border-b border-purple-900/30 transition-colors">
+                            <img src="img/documento.svg" alt="Ícone Introdução"
+                                class=" brightness-0 invert w-4 h-4 shrink-0 object-contain">
+                            <span>Introdução</span>
+                        </a>
 
-            <a href="#vantagens" class="flex items-center gap-3 px-4 py-3 text-xs text-purple-200 hover:bg-purple-950/80 hover:text-pink-400 border-b border-purple-900/30 transition-colors">
-                <img src="img/signal-alt-1.svg" alt="Ícone Vantagens" class="brightness-0 invert w-4 h-4 shrink-0 object-contain">
-                <span>Vantagens</span>
-            </a>
+                        <a href="#historia"
+                            class="flex items-center gap-3 px-4 py-3 text-xs text-purple-200 hover:bg-purple-950/80 hover:text-pink-400 border-b border-purple-900/30 transition-colors">
+                            <img src="img/lampada.svg" alt="Ícone História"
+                                class="brightness-0 invert w-4 h-4 shrink-0 object-contain">
+                            <span>História</span>
+                        </a>
 
-            <a href="#exemplos" class="flex items-center gap-3 px-4 py-3 text-xs text-purple-200 hover:bg-purple-950/80 hover:text-pink-400 transition-colors">
-                <img src="img/seta-para-a-direita.svg" alt="Ícone Exemplos" class="brightness-0 invert w-4 h-4 shrink-0 object-contain">
-                <span>Exemplos de usabilidade</span>
-            </a>
+                        <a href="#evolucao"
+                            class="flex items-center gap-3 px-4 py-3 text-xs text-purple-200 hover:bg-purple-950/80 hover:text-pink-400 border-b border-purple-900/30 transition-colors">
+                            <img src="img/grafico-histograma.svg" alt="Ícone Evolução"
+                                class="brightness-0 invert w-4 h-4 shrink-0 object-contain">
+                            <span>Evolução</span>
+                        </a>
 
-        </div>
-    </div>
+                        <a href="#porque"
+                            class="flex items-center gap-3 px-4 py-3 text-xs text-purple-200 hover:bg-purple-950/80 hover:text-pink-400 border-b border-purple-900/30 transition-colors">
+                            <img src="img/computador.svg" alt="Ícone Por que usar"
+                                class="brightness-0 invert w-4 h-4 shrink-0 object-contain">
+                            <span>Por quê usar?</span>
+                        </a>
 
-   
-    <a href="#documentacao" class="text-sm font-medium text-purple-200 hover:text-pink-400 transition-colors">Documentação</a>
-    <a href="#servicos" class="text-sm font-medium text-purple-200 hover:text-pink-400 transition-colors">Suporte & Serviços</a>
-    
-    <a href="#referencias" class="text-sm font-medium text-purple-200 hover:text-pink-400 transition-colors">Referências</a>
+                        <a href="#vantagens"
+                            class="flex items-center gap-3 px-4 py-3 text-xs text-purple-200 hover:bg-purple-950/80 hover:text-pink-400 border-b border-purple-900/30 transition-colors">
+                            <img src="img/signal-alt-1.svg" alt="Ícone Vantagens"
+                                class="brightness-0 invert w-4 h-4 shrink-0 object-contain">
+                            <span>Vantagens</span>
+                        </a>
 
-</nav>
+                        <a href="#exemplos"
+                            class="flex items-center gap-3 px-4 py-3 text-xs text-purple-200 hover:bg-purple-950/80 hover:text-pink-400 transition-colors">
+                            <img src="img/seta-para-a-direita.svg" alt="Ícone Exemplos"
+                                class="brightness-0 invert w-4 h-4 shrink-0 object-contain">
+                            <span>Exemplos de usabilidade</span>
+                        </a>
 
-            <a href="#contato" class="bg-gradient-to-r from-indigo-600 to-pink-500 hover:from-indigo-500 hover:to-pink-400 text-white font-bold py-2 px-4 rounded-lg text-sm shadow-lg shadow-pink-500/20 transition-all transform hover:-translate-y-0.5 inline-flex items-center justify-center gap-2">
-                 Contratar Suporte
+                    </div>
+                </div>
+
+
+                <a href="#documentacao"
+                    class="text-sm font-medium text-purple-200 hover:text-pink-400 transition-colors">Documentação</a>
+                <a href="#servicos"
+                    class="text-sm font-medium text-purple-200 hover:text-pink-400 transition-colors">Suporte &
+                    Serviços</a>
+
+                <a href="#referencias"
+                    class="text-sm font-medium text-purple-200 hover:text-pink-400 transition-colors">Referências</a>
+
+            </nav>
+
+            <a href="#contato"
+                class=" text-white font-bold py-2 px-4 rounded-lg text-sm shadow-lg shadow-pink-500/20 transition-all transform hover:-translate-y-0.5 inline-flex items-center justify-center gap-2">
+                Contratar Suporte
             </a>
         </div>
     </header>
 
-    <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center border-b border-purple-900/30 relative overflow-hidden bg-[linear-gradient(rgba(13,9,26,0.8),rgba(13,9,26,0.8)),url('img/public.avif')] bg-cover bg-center bg-no-repeat px-4">
-        
+    <section id="home"
+        class="min-h-screen flex flex-col justify-center items-center text-center border-b border-purple-900/30 relative overflow-hidden bg-[linear-gradient(rgba(13,9,26,0.8),rgba(13,9,26,0.8)),url('img/public.avif')] bg-cover bg-center bg-no-repeat px-4">
+
 
         <div class="max-w-4xl mx-auto px-4">
-            
+
             <h1 class="text-4xl sm:text-6xl font-extrabold text-white mt-6 mb-6 leading-tight">
-                ACELERE SUA WEB COM<span class="bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-400 bg-clip-text text-transparent"> QUEM DOMINA TAILWIND</span>
+                ACELERE SUA WEB COM<span
+                    class="bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-400 bg-clip-text text-transparent">
+                    QUEM DOMINA TAILWIND</span>
             </h1>
             <p class="text-purple-200/100 text-lg mb-8 max-w-2xl mx-auto">
                 "Design moderno. Código ágil. Resultados reais."
             </p>
-            <div class="flex justify-center gap-4 flex-wrap">
-                <a href="#servicos" class="bg-gradient-to-r from-indigo-600 to-pink-500 hover:from-indigo-500 hover:to-pink-400 text-white font-bold py-3 px-6 rounded-xl text-sm shadow-lg shadow-pink-500/20 transition-all transform hover:-translate-y-0.5 inline-flex items-center justify-center gap-2">
-                     ....
-                </a>
-                <a href="#historico" class="bg-purple-950/60 hover:bg-purple-900/60 text-purple-200 border border-purple-500/40 hover:border-pink-500/60 font-semibold px-6 py-3 rounded-xl transition-all inline-flex items-center justify-center gap-2">
-                     ....
-                </a>
-            </div>
+            
         </div>
     </section>
 
@@ -132,171 +151,78 @@
             <h2 class="text-3xl font-bold text-white text-center mb-12">1. Introdução</h2>
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="bg-purple-950/40 border border-indigo-500/30 p-8 rounded-2xl relative ">
+
+                    <h3 class="text-xl font-bold text-white mb-3">Criação & Lançamento (2017)</h3>
+                    <p class="text-purple-200/80 text-xl leading-relaxed mb-4">
+                        O Tailwind CSS é um framework CSS utilitário (utility-first) que revolucionou a forma como os
+                        desenvolvedores criam interfaces web. Diferente de frameworks tradicionais como Bootstrap ou
+                        Bulma — que fornecem componentes prontos como botões e barras de navegação com designs
+                        pré-definidos —, o Tailwind oferece classes utilitárias de baixo nível (como flex, pt-4,
+                        text-center, bg-blue-500) que permitem construir designs totalmente customizados diretamente no
+                        seu código HTML, sem precisar escrever uma única linha de CSS personalizado.
+                    </p>
                    
-                    <h3 class="text-xl font-bold text-white mb-2">Criação & Lançamento (2017)</h3>
-                    <p class="text-purple-200/80 text-sm leading-relaxed mb-4">
-                        O Tailwind CSS é um framework CSS utilitário (utility-first) que revolucionou a forma como os desenvolvedores criam interfaces web. Diferente de frameworks tradicionais como Bootstrap ou Bulma — que fornecem componentes prontos como botões e barras de navegação com designs pré-definidos —, o Tailwind oferece classes utilitárias de baixo nível (como flex, pt-4, text-center, bg-blue-500) que permitem construir designs totalmente customizados diretamente no seu código HTML, sem precisar escrever uma única linha de CSS personalizado.
-                    </p>
-                    <span class="text-xs text-pink-400 font-semibold bg-pink-500/10 px-2.5 py-1 rounded-md border border-pink-500/20">Versão Inicial: V0.1 em 2017</span>
                 </div>
 
-                <div id="empresa" class="bg-purple-950/40 border border-indigo-500/30 p-8 rounded-2xl relative transition-all hover:border-pink-500/60">
-                    
-                    <h3 class="text-xl font-bold text-white mb-2">Tailwind Labs Inc.</h3>
-                    <p class="text-purple-200/80 text-sm leading-relaxed mb-4">
-                        Atualmente mantido pela empresa <strong>Tailwind Labs</strong>, focada exclusivamente em ferramentas de UI de alta performance, incluindo produtos como Tailwind UI e Headless UI.
-                    </p>
-                    <span class="text-xs text-indigo-300 font-semibold bg-indigo-500/10 px-2.5 py-1 rounded-md border border-indigo-500/20">Empresa: Tailwind Labs</span>
-                </div>
+               <img src="img/autocomplete.png" alt="exemplo de cod.">
             </div>
         </div>
     </section>
 
-    <section id="comunidade" class="py-16 border-b border-purple-900/30">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-white text-center mb-12">2. Comunidade & Motivação para Uso</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-purple-950/40 border border-indigo-500/30 p-8 rounded-2xl">
-                    <div class="w-12 h-12 bg-pink-500/10 text-pink-400 rounded-xl flex items-center justify-center text-xl font-bold mb-4 border border-pink-500/30">
-                        <i class="fa-solid fa-users"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">Adocão Global</h3>
-                    <p class="text-purple-200/80 text-sm leading-relaxed mb-4">
-                        Com milhões de downloads semanais no NPM, o Tailwind é adotado pelas maiores empresas de tecnologia do mundo, garantindo suporte ativo de ecossistema.
-                    </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-purple-900/50 text-xs text-purple-200 rounded-lg border border-purple-700/50">OpenAI</span>
-                        <span class="px-3 py-1 bg-purple-900/50 text-xs text-purple-200 rounded-lg border border-purple-700/50">Vercel</span>
-                        <span class="px-3 py-1 bg-purple-900/50 text-xs text-purple-200 rounded-lg border border-purple-700/50">Shopify</span>
-                        <span class="px-3 py-1 bg-purple-900/50 text-xs text-purple-200 rounded-lg border border-purple-700/50">GitHub</span>
-                    </div>
-                </div>
-
-                <div id="motivacao" class="bg-purple-950/40 border border-indigo-500/30 p-8 rounded-2xl">
-                    <div class="w-12 h-12 bg-indigo-500/20 text-indigo-300 rounded-xl flex items-center justify-center text-xl font-bold mb-4 border border-indigo-500/30">
-                        <i class="fa-solid fa-bullseye"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">Por que foi criado?</h3>
-                    <p class="text-purple-200/80 text-sm leading-relaxed">
-                        A motivação principal foi acabar com o CSS tradicional caótico, onde desenvolvedores gastavam horas inventando nomes de classes CSS e gerenciando arquivos gigantescos cheios de código duplicado e regras conflitantes.
-                    </p>
-                </div>
-            </div>
-        </div>
+    <section id="historia" class="py-16 border-b border-purple-900/30">
+       
     </section>
 
-    <section id="vantagens" class="py-16 bg-[#130f24]/60 border-b border-purple-900/30">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-white text-center mb-12">3. Vantagens & Exemplos de Usabilidade</h2>
-            
-            <div class="grid md:grid-cols-4 gap-6 mb-12">
-                <div class="bg-purple-950/30 p-6 rounded-xl border border-indigo-500/20 hover:border-pink-500/50 transition-colors">
-                    <i class="fa-solid fa-bolt text-pink-400 text-2xl mb-3"></i>
-                    <h4 class="font-bold text-white mb-1">Motor JIT</h4>
-                    <p class="text-xs text-purple-200/70">Gera apenas as classes CSS que são realmente utilizadas.</p>
-                </div>
-                <div class="bg-purple-950/30 p-6 rounded-xl border border-indigo-500/20 hover:border-pink-500/50 transition-colors">
-                    <i class="fa-solid fa-palette text-indigo-400 text-2xl mb-3"></i>
-                    <h4 class="font-bold text-white mb-1">Design Customizável</h4>
-                    <p class="text-xs text-purple-200/70">Sem modelos engessados ou parecidos com outros sites.</p>
-                </div>
-                <div class="bg-purple-950/30 p-6 rounded-xl border border-indigo-500/20 hover:border-pink-500/50 transition-colors">
-                    <i class="fa-solid fa-mobile-screen text-pink-400 text-2xl mb-3"></i>
-                    <h4 class="font-bold text-white mb-1">Responsividade</h4>
-                    <p class="text-xs text-purple-200/70">Prefixos nativos como sm:, md: e lg: no HTML.</p>
-                </div>
-                <div class="bg-purple-950/30 p-6 rounded-xl border border-indigo-500/20 hover:border-pink-500/50 transition-colors">
-                    <i class="fa-solid fa-sliders text-indigo-400 text-2xl mb-3"></i>
-                    <h4 class="font-bold text-white mb-1">Manutenibilidade</h4>
-                    <p class="text-xs text-purple-200/70">Mudanças de estilo sem medo de quebrar outras páginas.</p>
-                </div>
-            </div>
-
-            <div id="exemplos" class="bg-purple-950/40 border border-purple-800/40 rounded-2xl p-6 sm:p-8">
-                <h3 class="text-xl font-bold text-white mb-6 text-center">Exemplo Prático: CSS Tradicional vs Tailwind CSS</h3>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div>
-                        <span class="text-xs font-bold text-red-400 bg-red-500/10 px-3 py-1 rounded-full border border-red-500/20">Modo Tradicional</span>
-                        <pre class="mt-3 bg-[#090710] p-4 rounded-xl text-xs text-red-300 font-mono overflow-x-auto">
-/* style.css */
-.meu-botao {
-  background-color: #6366f1;
-  color: #ffffff;
-  padding: 12px 24px;
-  border-radius: 8px;
-}
-.meu-botao:hover {
-  background-color: #ec4899;
-}</pre>
-                    </div>
-                    <div>
-                        <span class="text-xs font-bold text-pink-400 bg-pink-500/10 px-3 py-1 rounded-full border border-pink-500/20">Abordagem Tailwind CSS</span>
-                        <pre class="mt-3 bg-[#090710] p-4 rounded-xl text-xs text-pink-300 font-mono overflow-x-auto">
-&lt;!-- index.html --&gt;
-&lt;button class="bg-indigo-600 
-               hover:bg-pink-500 
-               text-white py-3 px-6 
-               rounded-lg transition-all"&gt;
-  Clique Aqui
-&lt;/button&gt;</pre>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="evolucao" class="py-16 bg-[#130f24]/60 border-b border-purple-900/30">
+       
     </section>
 
-    <section id="documentacao" class="py-16 border-b border-purple-900/30">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold text-white mb-4">4. Documentação Oficial do Framework</h2>
-            <p class="text-purple-200/80 text-sm max-w-2xl mx-auto mb-12">
-                A documentação do Tailwind é considerada referência no mercado pelo seu motor de busca instantâneo, exemplos interativos e navegação intuitiva.
-            </p>
-            <div class="grid md:grid-cols-3 gap-6 text-left">
-                <div class="bg-purple-950/40 p-6 rounded-2xl border border-indigo-500/30">
-                    <i class="fa-solid fa-magnifying-glass text-pink-400 text-2xl mb-3"></i>
-                    <h3 class="font-bold text-white mb-2">Busca Instantânea</h3>
-                    <p class="text-xs text-purple-200/70">Permite encontrar qualquer classe utilitária digitando atalhos no teclado (Ctrl + K).</p>
-                </div>
-                <div class="bg-purple-950/40 p-6 rounded-2xl border border-indigo-500/30">
-                    <i class="fa-solid fa-laptop-code text-indigo-400 text-2xl mb-3"></i>
-                    <h3 class="font-bold text-white mb-2">Playground Integrado</h3>
-                    <p class="text-xs text-purple-200/70">Possibilita testar códigos direto no navegador através do Tailwind Play.</p>
-                </div>
-                <div class="bg-purple-950/40 p-6 rounded-2xl border border-indigo-500/30">
-                    <i class="fa-solid fa-book text-pink-400 text-2xl mb-3"></i>
-                    <h3 class="font-bold text-white mb-2">Cheat Sheet de Classes</h3>
-                    <p class="text-xs text-purple-200/70">Lista detalhada mostrando a correspondência exata de cada classe com a regra CSS pura.</p>
-                </div>
-            </div>
-        </div>
+    <section id="porque" class="py-16 border-b border-purple-900/30">
+        
+    </section>
+
+    <section id="Exemplos de uso" class="py-16 bg-[#130f24]/60 border-b border-purple-900/30">
+       
     </section>
 
     <section id="servicos" class="py-16 bg-[#130f24]/60 border-b border-purple-900/30">
         <div class="max-w-7xl mx-auto px-4">
-            <span class="block text-center text-xs font-bold text-pink-400 uppercase tracking-widest mb-2">Serviços Especializados</span>
-            <h2 class="text-3xl font-bold text-white text-center mb-12">Suporte & Consultoria Comercial</h2>
             
+            <h2 class="text-3xl font-bold text-white text-center mb-12">Suporte e Consultoria</h2>
+
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-purple-950/40 border border-indigo-500/30 p-6 rounded-2xl relative transition-all hover:border-indigo-400">
+                <div
+                    class="bg-purple-950/40 border border-indigo-500/30 p-6 rounded-2xl relative transition-all hover:border-indigo-400">
                     <h3 class="text-xl font-bold text-white">Mentoria Dev</h3>
                     <div class="text-2xl font-bold text-indigo-300 my-4">R$ 490/mês</div>
-                    <p class="text-xs text-purple-200/70 mb-6">Acompanhamento e suporte técnico de código para sua equipe no uso do Tailwind.</p>
-                    <a href="#contato" class="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold py-2.5 px-4 rounded-xl text-sm transition-all inline-flex items-center justify-center gap-2 w-full">Contratar Mentoria</a>
+                    <p class="text-xs text-purple-200/70 mb-6">Acompanhamento e suporte técnico de código para sua
+                        equipe no uso do Tailwind.</p>
+                    <a href="#contato"
+                        class="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold py-2.5 px-4 rounded-xl text-sm transition-all inline-flex items-center justify-center gap-2 w-full">Contratar
+                        Mentoria</a>
                 </div>
 
-                <div class="bg-purple-950/80 border-2 border-pink-500 shadow-xl shadow-pink-500/20 p-6 rounded-2xl relative transition-all transform hover:-translate-y-1">
-                    <span class="absolute -top-3 right-4 bg-pink-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">Mais Vendido</span>
+                <div
+                    class="bg-purple-950/80 border-2 border-pink-500 shadow-xl shadow-pink-500/20 p-6 rounded-2xl relative transition-all transform hover:-translate-y-1">
+                    
                     <h3 class="text-xl font-bold text-white">Migração de Site</h3>
                     <div class="text-2xl font-bold text-pink-400 my-4">R$ 1.800</div>
-                    <p class="text-xs text-purple-200/70 mb-6">Criação ou migração completa de um site legado para a estrutura Tailwind CSS.</p>
-                    <a href="#contato" class="bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-400 hover:to-rose-400 text-white font-bold py-2.5 px-4 rounded-xl text-sm shadow-lg shadow-pink-500/30 transition-all inline-flex items-center justify-center gap-2 w-full">Solicitar Proposta</a>
+                    <p class="text-xs text-purple-200/70 mb-6">Criação ou migração completa de um site legado para a
+                        estrutura Tailwind CSS.</p>
+                    <a href="#contato"
+                        class="bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-400 hover:to-rose-400 text-white font-bold py-2.5 px-4 rounded-xl text-sm shadow-lg shadow-pink-500/30 transition-all inline-flex items-center justify-center gap-2 w-full">Solicitar
+                        Proposta</a>
                 </div>
 
-                <div class="bg-purple-950/40 border border-indigo-500/30 p-6 rounded-2xl relative transition-all hover:border-indigo-400">
+                <div
+                    class="bg-purple-950/40 border border-indigo-500/30 p-6 rounded-2xl relative transition-all hover:border-indigo-400">
                     <h3 class="text-xl font-bold text-white">Design System</h3>
                     <div class="text-2xl font-bold text-indigo-300 my-4">R$ 3.500</div>
-                    <p class="text-xs text-purple-200/70 mb-6">Padronização visual e criação de biblioteca de componentes reutilizáveis.</p>
-                    <a href="#contato" class="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold py-2.5 px-4 rounded-xl text-sm transition-all inline-flex items-center justify-center gap-2 w-full">Falar com Consultor</a>
+                    <p class="text-xs text-purple-200/70 mb-6">Padronização visual e criação de biblioteca de
+                        componentes reutilizáveis.</p>
+                    <a href="#contato"
+                        class="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold py-2.5 px-4 rounded-xl text-sm transition-all inline-flex items-center justify-center gap-2 w-full">Falar
+                        com Consultor</a>
                 </div>
             </div>
         </div>
@@ -305,23 +231,36 @@
     <section id="grupo" class="py-16 border-b border-purple-900/30">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-white text-center mb-2">Grupo 2 - Integrantes</h2>
-            <p class="text-center text-purple-300/60 text-sm mb-12">IFTM Campus Patrocínio | Curso Técnico em Informática Integrado ao Ensino Médio</p>
-            
+            <p class="text-center text-purple-300/60 text-sm mb-12">IFTM Campus Patrocínio | Curso Técnico em
+                Informática Integrado ao Ensino Médio</p>
+
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-purple-950/40 p-6 rounded-2xl border border-indigo-500/30 text-center hover:border-pink-500/50 transition-all">
-                    <div class="w-16 h-16 bg-gradient-to-tr from-indigo-600 to-pink-500 rounded-full mx-auto flex items-center justify-center text-xl font-bold text-white mb-4 shadow-lg shadow-pink-500/20">PA</div>
+                <div
+                    class="bg-purple-950/40 p-6 rounded-2xl border border-indigo-500/30 text-center hover:border-pink-500/50 transition-all">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-tr from-indigo-600 to-pink-500 rounded-full mx-auto flex items-center justify-center text-xl font-bold text-white mb-4 shadow-lg shadow-pink-500/20">
+                        PA</div>
                     <h3 class="font-bold text-white text-sm">Pedro Augusto de Castro Saito</h3>
                 </div>
-                <div class="bg-purple-950/40 p-6 rounded-2xl border border-indigo-500/30 text-center hover:border-pink-500/50 transition-all">
-                    <div class="w-16 h-16 bg-gradient-to-tr from-indigo-600 to-pink-500 rounded-full mx-auto flex items-center justify-center text-xl font-bold text-white mb-4 shadow-lg shadow-pink-500/20">TH</div>
+                <div
+                    class="bg-purple-950/40 p-6 rounded-2xl border border-indigo-500/30 text-center hover:border-pink-500/50 transition-all">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-tr from-indigo-600 to-pink-500 rounded-full mx-auto flex items-center justify-center text-xl font-bold text-white mb-4 shadow-lg shadow-pink-500/20">
+                        TH</div>
                     <h3 class="font-bold text-white text-sm">Thiago Henrique Cabral do Nascimento</h3>
                 </div>
-                <div class="bg-purple-950/40 p-6 rounded-2xl border border-indigo-500/30 text-center hover:border-pink-500/50 transition-all">
-                    <div class="w-16 h-16 bg-gradient-to-tr from-indigo-600 to-pink-500 rounded-full mx-auto flex items-center justify-center text-xl font-bold text-white mb-4 shadow-lg shadow-pink-500/20">DS</div>
+                <div
+                    class="bg-purple-950/40 p-6 rounded-2xl border border-indigo-500/30 text-center hover:border-pink-500/50 transition-all">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-tr from-indigo-600 to-pink-500 rounded-full mx-auto flex items-center justify-center text-xl font-bold text-white mb-4 shadow-lg shadow-pink-500/20">
+                        DS</div>
                     <h3 class="font-bold text-white text-sm">Davi Salles Aguiar</h3>
                 </div>
-                <div class="bg-purple-950/40 p-6 rounded-2xl border border-indigo-500/30 text-center hover:border-pink-500/50 transition-all">
-                    <div class="w-16 h-16 bg-gradient-to-tr from-indigo-600 to-pink-500 rounded-full mx-auto flex items-center justify-center text-xl font-bold text-white mb-4 shadow-lg shadow-pink-500/20">BG</div>
+                <div
+                    class="bg-purple-950/40 p-6 rounded-2xl border border-indigo-500/30 text-center hover:border-pink-500/50 transition-all">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-tr from-indigo-600 to-pink-500 rounded-full mx-auto flex items-center justify-center text-xl font-bold text-white mb-4 shadow-lg shadow-pink-500/20">
+                        BG</div>
                     <h3 class="font-bold text-white text-sm">Bryan Gabriel Pereira dos Reis</h3>
                 </div>
             </div>
@@ -333,15 +272,21 @@
             <div class="bg-purple-950/50 border border-indigo-500/40 p-8 rounded-2xl relative">
                 <h2 class="text-2xl font-bold text-white text-center mb-6">Solicitar Suporte Comercial</h2>
                 <form class="space-y-4" onsubmit="event.preventDefault(); alert('Solicitação enviada com sucesso!');">
-                    <input type="text" placeholder="Seu Nome / Empresa" required class="w-full bg-[#0f0c1b] border border-purple-800/60 rounded-xl px-4 py-3 text-sm text-purple-100 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500">
-                    <input type="email" placeholder="Seu E-mail" required class="w-full bg-[#0f0c1b] border border-purple-800/60 rounded-xl px-4 py-3 text-sm text-purple-100 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500">
-                    <select class="w-full bg-[#0f0c1b] border border-purple-800/60 rounded-xl px-4 py-3 text-sm text-purple-100 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500">
+                    <input type="text" placeholder="Seu Nome / Empresa" required
+                        class="w-full bg-[#0f0c1b] border border-purple-800/60 rounded-xl px-4 py-3 text-sm text-purple-100 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500">
+                    <input type="email" placeholder="Seu E-mail" required
+                        class="w-full bg-[#0f0c1b] border border-purple-800/60 rounded-xl px-4 py-3 text-sm text-purple-100 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500">
+                    <select
+                        class="w-full bg-[#0f0c1b] border border-purple-800/60 rounded-xl px-4 py-3 text-sm text-purple-100 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500">
                         <option class="bg-[#0f0c1b]">Mentoria Dev (R$ 490/mês)</option>
                         <option class="bg-[#0f0c1b]">Migração de Site (R$ 1.800)</option>
                         <option class="bg-[#0f0c1b]">Design System (R$ 3.500)</option>
                     </select>
-                    <textarea rows="3" placeholder="Detalhes do seu projeto..." class="w-full bg-[#0f0c1b] border border-purple-800/60 rounded-xl px-4 py-3 text-sm text-purple-100 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500"></textarea>
-                    <button type="submit" class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 hover:from-indigo-500 hover:to-pink-400 text-white font-bold py-3 px-4 rounded-xl text-sm shadow-lg shadow-pink-500/25 transition-all transform hover:-translate-y-0.5 inline-flex items-center justify-center gap-2 w-full">Enviar Mensagem</button>
+                    <textarea rows="3" placeholder="Detalhes do seu projeto..."
+                        class="w-full bg-[#0f0c1b] border border-purple-800/60 rounded-xl px-4 py-3 text-sm text-purple-100 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500"></textarea>
+                    <button type="submit"
+                        class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 hover:from-indigo-500 hover:to-pink-400 text-white font-bold py-3 px-4 rounded-xl text-sm shadow-lg shadow-pink-500/25 transition-all transform hover:-translate-y-0.5 inline-flex items-center justify-center gap-2 w-full">Enviar
+                        Mensagem</button>
                 </form>
             </div>
         </div>
@@ -351,9 +296,12 @@
         <div class="max-w-7xl mx-auto px-4 text-center">
             <h2 class="text-xl font-bold text-white mb-6">Referências Bibliográficas</h2>
             <div class="flex flex-wrap justify-center gap-6 text-xs text-purple-300/70">
-                <a href="https://tailwindcss.com/docs" target="_blank" class="hover:text-pink-400 underline">Documentação Oficial (tailwindcss.com)</a>
-                <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank" class="hover:text-pink-400 underline">Repositório GitHub (Tailwind Labs)</a>
-                <a href="https://tailwindcss.com/blog" target="_blank" class="hover:text-pink-400 underline">Blog Oficial Tailwind Labs</a>
+                <a href="https://tailwindcss.com/docs" target="_blank"
+                    class="hover:text-pink-400 underline">Documentação Oficial (tailwindcss.com)</a>
+                <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank"
+                    class="hover:text-pink-400 underline">Repositório GitHub (Tailwind Labs)</a>
+                <a href="https://tailwindcss.com/blog" target="_blank" class="hover:text-pink-400 underline">Blog
+                    Oficial Tailwind Labs</a>
             </div>
         </div>
     </section>
@@ -364,4 +312,5 @@
     </footer>
 
 </body>
+
 </html>
