@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvedores - TailwindCSS</title>
+    <link rel="icon" type="image/x-icon" href="../img/Tailwind_CSS_Logo.svg.webp">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#0f0c1b] text-purple-100 font-sans min-h-screen flex flex-col justify-between antialiased selection:bg-pink-500 selection:text-white">
+
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-[#0f0c1b]/80 border-b border-purple-900/40">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+
+            <div class="flex items-center gap-3">
+                <a href="../index.html"><img class="w-16" src="../img/Tailwind_CSS_Logo.svg.webp" alt="logo"></a>
+                <div>
+                    <span class="font-bold text-3xl text-white">Tailwind<span class="text-pink-500">CSS</span></span>
+                </div>
+            </div>
+
+            <nav class="hidden md:flex items-center gap-6">
+                <div class="relative group">
+                    <button
+                        class="flex items-center gap-2 py-2 px-3 text-sm font-medium text-purple-200 hover:text-pink-400 transition-colors">
+                        <img src="../img/procurar.svg" alt="Ícone Introdução"
+                            class="brightness-0 invert w-4 h-4 shrink-0 object-contain">
+                        <span>Sobre</span>
+                    </button>
+
+                    <div
+                        class="absolute left-0 top-full mt-1 w-64 bg-[#130f24] border border-purple-900/50 rounded-xl shadow-2xl shadow-purple-950 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+
+                        <a href="../index.html#introducao"
+                            class="flex items-center gap-3 px-4 py-3 text-xs text-purple-200 hover:bg-purple-950/80 hover:text-pink-400 border-b border-purple-900/30 transition-colors">
+                            <img src="../img/livros.svg" alt="Ícone Introdução"
+                                class="brightness-0 invert w-4 h-4 shrink-0 object-contain">
+                            <span>Introdução</span>
+                        </a>
+
+                        <a href="../index.html#historia"
+                            class="flex items-center gap-3 px-4 py-3 text-xs text-purple-200 hover:bg-purple-950/80 hover:text-pink-400 border-b border-purple-900/30 transition-colors">
+                            <img src="../img/lampada.svg" alt="Ícone História"
+                                class="brightness-0 invert w-4 h-4 shrink-0 object-contain">
+                            <span>História</span>
+                        </a>
+
+                        <a href="../index.html#evolucao"
+                            class="flex items-center gap-3 px-4 py-3 text-xs text-purple-200 hover:bg-purple-950/80 hover:text-pink-400 border-b border-purple-900/30 transition-colors">
+                            <img src="../img/grafico-histograma.svg" alt="Ícone Evolução"
+                                class="brightness-0 invert w-4 h-4 shrink-0 object-contain">
+                            <span>Evolução</span>
+                        </a>
+
+                        <a href="../index.html#porque"
+                            class="flex items-center gap-3 px-4 py-3 text-xs text-purple-200 hover:bg-purple-950/80 hover:text-pink-400 border-b border-purple-900/30 transition-colors">
+                            <img src="../img/computador.svg" alt="Ícone Por que usar"
+                                class="brightness-0 invert w-4 h-4 shrink-0 object-contain">
+                            <span>Por quê usar?</span>
+                        </a>
+
+                        <a href="../index.html#exemplos"
+                            class="flex items-center gap-3 px-4 py-3 text-xs text-purple-200 hover:bg-purple-950/80 hover:text-pink-400 transition-colors">
+                            <img src="../img/seta-para-a-direita.svg" alt="Ícone Exemplos"
+                                class="brightness-0 invert w-4 h-4 shrink-0 object-contain">
+                            <span>Exemplos de uso</span>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="../index.html#documentacao"
+                    class="text-sm font-medium text-purple-200 hover:text-pink-400 transition-colors">Documentação</a>
+                <a href="solicitar.html"
+                    class="text-sm font-medium text-purple-200 hover:text-pink-400 transition-colors">Suporte & Serviços</a>
+                <a href="../index.html#referencias"
+                    class="text-sm font-medium text-purple-200 hover:text-pink-400 transition-colors">Referências</a>
+            </nav>
+
+            <a href="solicitar.html"
+                class="bg-pink-600 hover:bg-pink-500 text-white font-bold py-2 px-4 rounded-lg text-sm shadow-lg shadow-pink-600/20 transition-all transform hover:-translate-y-0.5 inline-flex items-center justify-center gap-2">
+                Contratar Suporte
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-6xl mx-auto px-6 py-12 w-full text-purple-100 flex flex-col items-center">
+
+        <h1 class="text-4xl md:text-5xl font-extrabold text-pink-500 mb-10 tracking-tight text-center">
+            Nossos Desenvolvedores
+        </h1>
+
+        
+        <div class="w-full bg-[#130f24] border border-purple-900/50 rounded-2xl p-6 md:p-10 shadow-2xl ]">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+              
+                <div class="bg-[#0f0c1b] border-2 border-pink-500/80 hover:border-pink-400 rounded-xl p-4 flex flex-col items-center transition-all duration-300 transform hover:-translate-y-1 shadow-lg shadow-pink-950/20">
+                    <div class="w-full h-64 rounded-lg overflow-hidden border border-purple-900/50 mb-4 bg-purple-950/40">
+                        <img src="../img/bryan.jpg" alt="Bryan" class="w-full h-full object-cover">
+                    </div>
+                    <h2 class="text-xl font-bold text-white tracking-wide border-t border-purple-900/40 w-full text-center pt-3 mt-auto">
+                        Bryan
+                    </h2>
+                </div>
+
+               
+                <div class="bg-[#0f0c1b] border-2 border-pink-500/80 hover:border-pink-400 rounded-xl p-4 flex flex-col items-center transition-all duration-300 transform hover:-translate-y-1 shadow-lg shadow-pink-950/20">
+                    <div class="w-full h-64 rounded-lg overflow-hidden border border-purple-900/50 mb-4 bg-purple-950/40">
+                        <img src="../img/davi.jpg" alt="Davi" class="w-full h-full object-cover">
+                    </div>
+                    <h2 class="text-xl font-bold text-white tracking-wide border-t border-purple-900/40 w-full text-center pt-3 mt-auto">
+                        Davi
+                    </h2>
+                </div>
+
+             
+                <div class="bg-[#0f0c1b] border-2 border-pink-500/80 hover:border-pink-400 rounded-xl p-4 flex flex-col items-center transition-all duration-300 transform hover:-translate-y-1 shadow-lg shadow-pink-950/20">
+                    <div class="w-full h-64 rounded-lg overflow-hidden border border-purple-900/50 mb-4 bg-purple-950/40">
+                        <img src="../img/WhatsApp Image 2026-08-19 at 16.42.14.jpeg" alt="Pedro" class="w-full h-full object-cover">
+                    </div>
+                    <h2 class="text-xl font-bold text-white tracking-wide border-t border-purple-900/40 w-full text-center pt-3 mt-auto">
+                        Pedro
+                    </h2>
+                </div>
+
+             
+                <div class="bg-[#0f0c1b] border-2 border-pink-500/80 hover:border-pink-400 rounded-xl p-4 flex flex-col items-center transition-all duration-300 transform hover:-translate-y-1 shadow-lg shadow-pink-950/20">
+                    <div class="w-full h-64 rounded-lg overflow-hidden border border-purple-900/50 mb-4 bg-purple-950/40">
+                        <img src="../img/thiago.jpg" alt="Thiago" class="w-full h-full object-cover">
+                    </div>
+                    <h2 class="text-xl font-bold text-white tracking-wide border-t border-purple-900/40 w-full text-center pt-3 mt-auto">
+                        Thiago
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-[#0f0c1b] text-purple-200 border-t border-purple-900/40 py-12 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <img src="../img/Tailwind_CSS_Logo.svg.webp" alt="logo" class="w-10 h-10 object-contain">
+                    <div>
+                        <h2 class="text-xl font-bold text-white tracking-wide leading-none">TAILWINDCSS</h2>
+                        <h3 class="text-sm font-bold text-pink-500 tracking-wide mt-1">SERVIÇOS</h3>
+                    </div>
+                </div>
+
+                <p class="text-xs text-purple-300/70 max-w-xs leading-relaxed">
+                    Sempre buscando a eficiência prática e assistencial.
+                </p>
+
+                <ul class="space-y-2 text-sm font-medium">
+                    <li><a href="../index.html" class="hover:text-pink-400 transition-colors">Home</a></li>
+                    <li><a href="../index.html#introducao" class="hover:text-pink-400 transition-colors">Introdução</a></li>
+                    <li><a href="solicitar.html" class="hover:text-pink-400 transition-colors">Contratar Suporte</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-bold text-pink-500 mb-4">Páginas de Suporte</h3>
+                <ul class="space-y-2.5 text-sm font-medium text-purple-300/80">
+                
+                    <li><a href="termos.html" class="hover:text-pink-400 transition-colors">Termos de uso</a></li>
+                    <li><a href="politica.html" class="hover:text-pink-400 transition-colors">Políticas de privacidade</a></li>
+                    <li><a href="desenvolvedores.html" class="text-pink-400 hover:text-pink-300 transition-colors font-semibold">Sobre os desenvolvedores</a></li>
+                </ul>
+            </div>
+
+            <div id="referencias" class="space-y-4">
+                <h3 class="text-sm font-bold text-pink-500">Referências Bibliográficas</h3>
+                <ul class="space-y-2.5 text-sm font-medium">
+                    <li>
+                        <a href="https://tailwindcss.com/docs" target="_blank" class="hover:text-pink-400 transition-colors">
+                            Documentação Oficial (tailwindcss.com)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank" class="hover:text-pink-400 transition-colors">
+                            Repositório GitHub (Tailwind Labs)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://tailwindcss.com/blog" target="_blank" class="hover:text-pink-400 transition-colors">
+                            Blog Oficial Tailwind Labs
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto pt-6 border-t border-purple-900/30 flex justify-center items-center gap-6 text-xs text-purple-400/60">
+            <p>Copyright © - TailWindCSS</p>
+            <p>IFTM 2026</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
