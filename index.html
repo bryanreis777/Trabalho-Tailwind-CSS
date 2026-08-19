@@ -30,6 +30,19 @@
     </script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 
 <body class="bg-[#0f0c1b] text-purple-100 font-sans antialiased selection:bg-pink-500 selection:text-white">
@@ -126,39 +139,47 @@
     <section id="home"
         class="min-h-screen flex flex-col justify-center items-center text-center border-b border-purple-900/30 relative overflow-hidden bg-[linear-gradient(rgba(13,9,26,0.8),rgba(13,9,26,0.8)),url('img/public.avif')] bg-cover bg-center bg-no-repeat px-4">
 
-
         <div class="max-w-4xl mx-auto px-4">
 
-            <h1 class="text-4xl sm:text-6xl font-extrabold text-white mt-6 mb-6 leading-tight">
-                ACELERE SUA WEB COM<span
-                    class="bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-400 bg-clip-text text-transparent">
+            <h1
+                class="text-4xl sm:text-6xl font-extrabold text-white mt-6 mb-6 leading-tight animate-[fadeInUp_0.8s_ease-out_both]">
+                ACELERE SUA WEB COM <span
+                    class="bg-gradient-to-r from-sky-400 via-purple-400 to-white bg-clip-text text-transparent">
                     QUEM DOMINA TAILWIND</span>
             </h1>
-            <p class="text-purple-200/100 text-lg mb-8 max-w-2xl mx-auto">
+
+
+            <p class="text-purple-200/100 text-lg mb-8 max-w-2xl mx-auto animate-[fadeInUp_0.8s_ease-out_0.3s_both]">
                 "Design moderno. Código ágil. Resultados reais."
             </p>
 
         </div>
     </section>
 
-    <div class="w-full">
+
+
+
+    <div class="w-full font-sans text-lg text-gray-800 ">
+
         <section id="introducao" class="py-16 bg-[#0a0714] border-b border-purple-900/30">
             <div class="w-[85%] mx-auto px-4">
 
-           
+                <!-- Título da Seção (Sem gradiente, em rosa text-pink-500) -->
                 <h2
-                    class="border-b border-purple-900/40 text-3xl font-bold text-pink-500 mb-12 pb-4 flex items-center justify-center gap-3">
+                    class="mt-12 mb-32 border-b border-purple-900/40 text-5xl font-extrabold text-pink-500 pb-4 flex items-center justify-center gap-3">
                     <img src="img/documento.svg" alt="Ícone Introdução"
-                        class="brightness-0 invert w-7 h-7 shrink-0 object-contain">
+                        class="brightness-0 invert w-10 h-10 shrink-0 object-contain">
                     INTRODUÇÃO
                 </h2>
 
-            
-                <div class="grid md:grid-cols-2 gap-4 items-stretch">
+                <!-- Grid de Card + Imagem -->
+                <div class="grid md:grid-cols-2 gap-6 items-stretch mb-20">
 
-            
-                    <div class="bg-[#160a2a] border-2 border-[#2e1052] p-8 rounded-2xl flex flex-col justify-center">
-                        <h3 class="text-3xl font-bold text-pink-500 mb-3">Criação e Lançamento (2017)</h3>
+                    <!-- Card de Texto -->
+                    <div
+                        class="bg-[#160a2a] border-2 border-purple-800/60 p-8 rounded-2xl flex flex-col justify-center">
+                        <!-- Título do Card -->
+                        <h3 class="text-3xl font-bold text-pink-500 mb-6">Criação e Lançamento (2017)</h3>
                         <p class="text-purple-200/85 text-xl leading-relaxed">
                             O Tailwind CSS é um framework CSS utilitário (utility-first) que revolucionou a forma como
                             os desenvolvedores criam interfaces web. Diferente de frameworks tradicionais como Bootstrap
@@ -169,14 +190,14 @@
                         </p>
                     </div>
 
-             
+                    <!-- Imagem -->
                     <img src="img/aleatorio2.jpg" alt="Exemplo de código"
-                        class="w-full h-full object-cover border-2 border-[#2e1052] rounded-2xl min-h-[320px]">
+                        class="w-full h-full object-cover border-2 border-purple-800/60 rounded-2xl min-h-[320px]">
 
                 </div>
 
-              
-                <div class="mt-12 px-2">
+                <!-- Parágrafo Inferior -->
+                <div class="px-2 mb-8">
                     <p class="text-purple-200/90 text-xl leading-relaxed font-normal">
                         Além da flexibilidade no design, a grande força do Tailwind CSS reside no ganho de produtividade
                         e no desempenho altamente otimizado. Ao construir interfaces diretamente no HTML usando classes
@@ -193,106 +214,112 @@
             </div>
         </section>
 
-        <section id="historia" class="py-16 bg-[#0f0c1b] border-b border-purple-900/30">
+        <section id="historia" class="py-16 bg-[#38bdf8] border-b border-sky-900/50">
             <div class="w-[80%] mx-auto px-4">
 
-            
+                <!-- Título da Seção (Borda inferior mais escura) -->
                 <h2
-                    class="border-b border-purple-900/40 text-3xl font-bold text-white text-center mb-12 pb-4 flex items-center justify-center gap-3">
+                    class="mt-12 mb-32 border-b border-sky-900/50 text-5xl font-extrabold pb-4 flex items-center justify-center gap-3">
                     <img src="img/lampada.svg" alt="Ícone História"
-                        class="brightness-0 invert w-7 h-7 shrink-0 object-contain">
-                    A HISTÓRIA DO <span class="text-pink-500">TAILWIND CSS</span>
+                        class="brightness-0 invert w-10 h-10 shrink-0 object-contain">
+                    <span class="text-white">
+                        A HISTÓRIA DO TAILWIND CSS
+                    </span>
                 </h2>
 
-           
                 <div class="grid md:grid-cols-2 gap-6 items-center">
 
-                  
+                    <!-- Card 1 (Bordas escuras em tom azul-escuro/slate) -->
                     <div
-                        class="bg-[#130f24] border-2 border-purple-800/60 p-8 rounded-2xl h-[400px] flex flex-col justify-center">
+                        class="bg-[#0c1021] border-2 border-sky-950 p-8 rounded-2xl h-[400px] flex flex-col justify-center">
                         <h3 class="text-3xl font-bold text-white">O Nascimento de uma Ideia</h3>
-                        <p class="text-pink-500 text-sm font-semibold mt-1 mb-3">2017 - O Início</p>
-                        <p class="text-xl text-purple-200/80  leading-relaxed">
+                        <p class="text-sky-400 text-sm font-semibold mt-1 mb-3">2017 - O Início</p>
+                        <p class="text-xl text-slate-200 leading-relaxed">
                             Em 2017, o desenvolvedor <strong class="text-white">Adam Wathan</strong> estava cansado de
                             reescrever os mesmos estilos CSS e criar nomes de classes complicados para cada projeto.
                             Trabalhando em aplicações reais com seus colaboradores Steve Schoger e David Hemphill, ele
                             começou a extrair pequenos utilitários reutilizáveis.
                         </p>
                     </div>
-                    <img src="img/adam.jpg" alt="Adam Wathan"
-                        class="w-full h-[400px] object-cover border-2 border-purple-800/60 rounded-2xl">
-                    <img src="img/utility.png" alt="Exemplo Utility First"
-                        class="w-full h-[400px] object-cover border-2 border-purple-800/60 rounded-2xl">
 
-               
+                    <!-- Imagem 1 -->
+                    <img src="img/adam.jpg" alt="Adam Wathan"
+                        class="w-full h-[400px] object-cover border-2 border-sky-950 rounded-2xl">
+
+                    <!-- Imagem 2 -->
+                    <img src="img/utility.png" alt="Exemplo Utility First"
+                        class="w-full h-[400px] object-cover border-2 border-sky-950 rounded-2xl">
+
+                    <!-- Card 2 -->
                     <div
-                        class="bg-[#130f24] border-2 border-purple-800/60 p-8 rounded-2xl h-[400px] flex flex-col justify-center">
+                        class="bg-[#0c1021] border-2 border-sky-950 p-8 rounded-2xl h-[400px] flex flex-col justify-center">
                         <h3 class="text-3xl font-bold text-white">Superando o Ceticismo</h3>
-                        <p class="text-pink-500 text-sm font-semibold mt-1 mb-3">2019 - Versão 1.0</p>
-                        <p class="text-xl text-purple-200/80  leading-relaxed">
-                            Quando o Tailwind CSS v1.0 foi oficialmente lançado em maio de 2019, a comunidade de
+                        <p class="text-sky-400 text-sm font-semibold mt-1 mb-3">2019 - Versão 1.0</p>
+                        <p class="text-xl text-slate-200 leading-relaxed">
+                            Quando o Tailwind CSS v1.0 foi officially lançado em maio de 2019, a comunidade de
                             desenvolvimento reagiu com desconfiança. Muitos diziam que escrever utilitários no HTML
                             parecia "voltar ao CSS inline dos anos 90". No entanto, a abordagem <em
-                                class="text-pink-400">utility-first</em> provou sua eficiência.
+                                class="text-sky-300">utility-first</em> provou sua eficiência.
                         </p>
                     </div>
 
-
-
-            
+                    <!-- Card 3 -->
                     <div
-                        class="bg-[#130f24] border-2 border-purple-800/60 p-8 rounded-2xl h-[400px] flex flex-col justify-center">
+                        class="bg-[#0c1021] border-2 border-sky-950 p-8 rounded-2xl h-[400px] flex flex-col justify-center">
                         <h3 class="text-3xl font-bold text-white">A Revolução do Compilador JIT</h3>
-                        <p class="text-pink-500 text-sm font-semibold mt-1 mb-3">2021 - Versão 3.0</p>
-                        <p class="text-purple-200/80 text-xl leading-relaxed">
+                        <p class="text-sky-400 text-sm font-semibold mt-1 mb-3">2021 - Versão 3.0</p>
+                        <p class="text-slate-200 text-xl leading-relaxed">
                             Em 2021, o lançamento da versão 3.0 trouxe o mecanismo <strong
                                 class="text-white">Just-In-Time (JIT)</strong>. Em vez de gerar um arquivo CSS gigante
                             com todas as combinações possíveis, o Tailwind passou a compilar os estilos sob demanda, em
                             milissegundos.
                         </p>
                     </div>
-                    <img src="img/just.png" alt="Compilador JIT"
-                        class="w-full h-[400px] object-cover border-2 border-purple-800/60 rounded-2xl">
-                    <img src="img/tail.png" alt="Tailwind Ecossistema"
-                        class="w-full h-[400px] object-cover border-2 border-purple-800/60 rounded-2xl">
 
-            
+                    <!-- Imagem 3 -->
+                    <img src="img/just.png" alt="Compilador JIT"
+                        class="w-full h-[400px] object-cover border-2 border-sky-950 rounded-2xl">
+
+                    <!-- Imagem 4 -->
+                    <img src="img/tail.png" alt="Tailwind Ecossistema"
+                        class="w-full h-[400px] object-cover border-2 border-sky-950 rounded-2xl">
+
+                    <!-- Card 4 -->
                     <div
-                        class="bg-[#130f24] border-2 border-purple-800/60 p-8 rounded-2xl h-[400px] flex flex-col justify-center">
+                        class="bg-[#0c1021] border-2 border-sky-950 p-8 rounded-2xl h-[400px] flex flex-col justify-center">
                         <h3 class="text-3xl font-bold text-white">O Padrão Global da Web</h3>
-                        <p class="text-pink-500 text-sm font-semibold mt-1 mb-3">Atualmente</p>
-                        <p class="text-purple-200/80 text-xl leading-relaxed">
+                        <p class="text-sky-400 text-sm font-semibold mt-1 mb-3">Atualmente</p>
+                        <p class="text-slate-200 text-xl leading-relaxed">
                             Hoje, o Tailwind CSS deixou de ser uma alternativa exótica para se tornar o padrão da
                             indústria. Utilizado por gigantes da tecnologia como Vercel, OpenAI, GitHub e Shopify, ele
                             transformou o fluxo de trabalho no desenvolvimento frontend moderno.
                         </p>
                     </div>
 
-
-
                 </div>
 
             </div>
-
         </section>
 
         <section id="evolucao" class="py-16 bg-[#0a0714] border-b border-purple-900/30">
             <div class="w-[85%] mx-auto px-4">
 
-        
+
                 <h2
-                    class="border-b border-purple-900/40 text-3xl font-bold text-pink-500 text-center mb-12 pb-4 flex items-center justify-center gap-3">
+                    class="mt-12 mb-32 border-b border-purple-900/40 text-5xl font-extrabold text-pink-500 pb-4 flex items-center justify-center gap-3">
                     <img src="img/grafico-histograma.svg" alt="Ícone Evolução"
-                        class="brightness-0 invert w-7 h-7 shrink-0 object-contain">
-                    EVOLUÇÃO
+                        class="brightness-0 invert w-10 h-10 shrink-0 object-contain">
+                    <span>
+                        EVOLUÇÃO
+                    </span>
                 </h2>
 
-              
+
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 
-             
 
-                  
+
+
                     <div
                         class="bg-[#160a2a] border-2 border-[#2e1052] p-6 rounded-2xl flex flex-col justify-between min-h-[320px]">
                         <div>
@@ -305,7 +332,7 @@
                         </div>
                     </div>
 
-            
+
                     <div
                         class="bg-[#160a2a] border-2 border-[#2e1052] p-6 rounded-2xl flex flex-col justify-between min-h-[320px]">
                         <div>
@@ -318,22 +345,22 @@
                         </div>
                     </div>
 
-                
+
                     <img src="img/figurante.jpg" alt="Ilustração Evolução 1"
                         class="w-full h-[320px] object-cover border-2 border-[#2e1052] rounded-2xl">
 
-                
+
                     <img src="img/aleatorio.jpg" alt="Ilustração Evolução 2"
                         class="w-full h-[320px] object-cover border-2 border-[#2e1052] rounded-2xl">
 
 
-                 
 
-              
+
+
                     <img src="img/figurante2.jpg" alt="Ilustração Evolução 3"
                         class="w-full h-[320px] object-cover border-2 border-[#2e1052] rounded-2xl">
 
-                 
+
                     <div
                         class="bg-[#160a2a] border-2 border-[#2e1052] p-6 rounded-2xl flex flex-col justify-between min-h-[320px]">
                         <div>
@@ -346,7 +373,7 @@
                         </div>
                     </div>
 
-                  
+
                     <div
                         class="bg-[#160a2a] border-2 border-[#2e1052] p-6 rounded-2xl flex flex-col justify-between min-h-[320px]">
                         <div>
@@ -359,7 +386,7 @@
                         </div>
                     </div>
 
-                 
+
                     <div
                         class="bg-[#160a2a] border-2 border-[#2e1052] p-6 rounded-2xl flex flex-col justify-between min-h-[320px]">
                         <div>
@@ -372,9 +399,9 @@
                         </div>
                     </div>
 
-                </div> 
+                </div>
 
-              
+
                 <div class="mt-12 px-2">
                     <p class="text-purple-200/90 text-xl leading-relaxed font-normal">
                         A viralização do <strong class="text-white">Tailwind CSS</strong> nos últimos anos é um dos
@@ -389,81 +416,151 @@
             </div>
         </section>
 
-        <section id="porque" class="py-16 bg-[#0a0714] border-b border-purple-900/30">
-    <div class="w-[80%] mx-auto px-4">
+        <section id="porque" class="py-16 bg-[#38bdf8] border-b border-sky-300/40">
+            <div class="w-[80%] mx-auto px-4">
 
-       
-        <h2 class="border-b border-purple-900/40 text-3xl font-bold text-pink-500 text-center mb-8 pb-4 flex items-center justify-center gap-3">
-            <img src="img/computador.svg" alt="Ícone Por que usar" class="brightness-0 invert w-7 h-7 shrink-0 object-contain">
-            POR QUÊ USAR?
-        </h2>
+                <!-- Título da Seção (Texto e borda em branco) -->
+                <h2
+                    class="mt-12 mb-32 border-b border-white/40 text-5xl font-extrabold pb-4 flex items-center justify-center gap-3 text-white">
+                    <img src="img/computador.svg" alt="Ícone Por que usar"
+                        class="brightness-0 invert w-10 h-10 shrink-0 object-contain">
+                    POR QUE USAR?
+                </h2>
 
-        
-        <p class="text-purple-200/90 text-xl leading-relaxed font-normal mb-12">
-            O Tailwind CSS redefiniu a criação de interfaces modernas ao entregar produtividade sem precedentes e controle total sobre o design. Unindo performance otimizada a uma experiência de desenvolvimento ágil, ele se tornou a escolha ideal para desenvolvedores independentes e grandes equipes de tecnologia. A seguir, veja os principais motivos para adotar o framework no seu fluxo de trabalho.
-        </p>
+                <p class="text-white text-xl leading-relaxed font-normal mb-12">
+                    O Tailwind CSS redefiniu a criação de interfaces modernas ao entregar produtividade sem precedentes
+                    e controle total sobre o design. Unindo performance otimizada a uma experiência de desenvolvimento
+                    ágil, ele se tornou a escolha ideal para desenvolvedores independentes e grandes equipes de
+                    tecnologia. A seguir, veja os principais motivos para adotar o framework no seu fluxo de trabalho.
+                </p>
 
-       
-        <div class="flex flex-col gap-8">
+                <div class="flex flex-col gap-8">
 
-           
-            <div class="bg-[#160a2a] border-2 border-[#2e1052] p-8 rounded-2xl grid md:grid-cols-2 gap-8 items-center">
-                <div>
-                    <span class="text-pink-500 font-bold text-xl block mb-1">Produtividade</span>
-                    <h3 class="text-2xl font-bold text-white mb-3">Desenvolvimento em Alta Velocidade</h3>
-                    <p class="text-purple-200/85 text-lg leading-relaxed">
-                        Ao estilizar os elementos diretamente no HTML, você elimina a troca constante de arquivos e a fadiga de inventar nomes de classes CSS. O fluxo de trabalho torna-se contínuo, focado e drasticamente mais rápido.
-                    </p>
+                    <!-- Card 1: Produtividade -->
+                    <div class="bg-[#0c1021] p-8 rounded-2xl grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <span class="text-sky-400 font-bold text-xl block mb-1">Produtividade</span>
+                            <h3 class="text-2xl font-bold text-white mb-3">Desenvolvimento em Alta Velocidade</h3>
+                            <p class="text-slate-300 text-lg leading-relaxed">
+                                Ao estilizar os elementos diretamente no HTML, você elimina a troca constante de
+                                arquivos e a fadiga de inventar nomes de classes CSS. O fluxo de trabalho torna-se
+                                contínuo, focado e drasticamente mais rápido.
+                            </p>
+                        </div>
+                        <div class="w-full h-[260px] rounded-xl overflow-hidden border border-white/10">
+                            <img src="img/autocomplete.png" alt="Demonstração de Produtividade"
+                                class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Performance -->
+                    <div class="bg-[#0c1021] p-8 rounded-2xl grid md:grid-cols-2 gap-8 items-center">
+                        <div
+                            class="w-full h-[260px] rounded-xl overflow-hidden border border-white/10 order-2 md:order-1">
+                            <img src="img/performance.webp" alt="Demonstração de Performance"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="order-1 md:order-2">
+                            <span class="text-sky-400 font-bold text-xl block mb-1">Performance</span>
+                            <h3 class="text-2xl font-bold text-white mb-3">Compilação Leve e Otimizada</h3>
+                            <p class="text-slate-300 text-lg leading-relaxed">
+                                O compilador inteligente analisa todo o seu código e elimina automaticamente qualquer
+                                CSS não utilizado. O resultado final é um arquivo incrivelmente leve, garantindo
+                                carregamentos instantâneos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Consistência -->
+                    <div class="bg-[#0c1021] p-8 rounded-2xl grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <span class="text-sky-400 font-bold text-xl block mb-1">Consistência</span>
+                            <h3 class="text-2xl font-bold text-white mb-3">Design System Padronizado</h3>
+                            <p class="text-slate-300 text-lg leading-relaxed">
+                                Com escalas de espaçamento, tipografia e paletas de cores pré-configuradas, o Tailwind
+                                garante harmonia visual nativa, facilitando a manutenção e a colaboração entre equipes.
+                            </p>
+                        </div>
+                        <div class="w-full h-[260px] rounded-xl overflow-hidden border border-white/10">
+                            <img src="img/design.png" alt="Demonstração do Design System"
+                                class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
                 </div>
-                <div class="w-full h-[260px] rounded-xl overflow-hidden border border-purple-800/40">
-                    <img src="img/autocomplete.png" alt="Demonstração de Produtividade" class="w-full h-full object-cover">
-                </div>
+
             </div>
+        </section>
 
-            
-            <div class="bg-[#160a2a] border-2 border-[#2e1052] p-8 rounded-2xl grid md:grid-cols-2 gap-8 items-center">
-                <div class="w-full h-[260px] rounded-xl overflow-hidden border border-purple-800/40 order-2 md:order-1">
-                    <img src="" alt="Demonstração de Performance" class="w-full h-full object-cover">
-                </div>
-                <div class="order-1 md:order-2">
-                    <span class="text-pink-500 font-bold text-xl block mb-1">Performance</span>
-                    <h3 class="text-2xl font-bold text-white mb-3">Compilação Leve e Otimizada</h3>
-                    <p class="text-purple-200/85 text-lg leading-relaxed">
-                        O compilador inteligente analisa todo o seu código e elimina automaticamente qualquer CSS não utilizado. O resultado final é um arquivo incrivelmente leve, garantindo carregamentos instantâneos.
-                    </p>
-                </div>
-            </div>
+        <section id="exemplos" class="py-16 bg-[#0a0714] border-b border-purple-900/30">
+    <div class="w-[85%] mx-auto px-4">
 
-            
-            <div class="bg-[#160a2a] border-2 border-[#2e1052] p-8 rounded-2xl grid md:grid-cols-2 gap-8 items-center">
-                <div>
-                    <span class="text-pink-500 font-bold text-xl block mb-1">Consistência</span>
-                    <h3 class="text-2xl font-bold text-white mb-3">Design System Padronizado</h3>
-                    <p class="text-purple-200/85 text-lg leading-relaxed">
-                        Com escalas de espaçamento, tipografia e paletas de cores pré-configuradas, o Tailwind garante harmonia visual nativa, facilitando a manutenção e a colaboração entre equipes.
-                    </p>
+        <!-- Container Principal (Seguindo o layout de bloco centralizado do site) -->
+        <div class="bg-[#160a2a] border-2 border-purple-800/60 rounded-2xl p-8 md:p-12 shadow-2xl">
+
+            <!-- Título Principal Centralizado (Como o título "Queen" no modelo) -->
+            <h2 class="text-5xl font-extrabold text-pink-500 text-center mb-10">
+                EXEMPLOS DE USO
+            </h2>
+
+            <!-- Subtítulo Alinhado à Esquerda (Como "Sobre a banda" no modelo) -->
+            <h3 class="text-2xl font-bold text-pink-400 mb-4">
+                CSS Tradicional vs Tailwind CSS
+            </h3>
+
+            <!-- Parágrafo Explicativo Principal -->
+            <p class="text-purple-200/85 text-xl leading-relaxed mb-10">
+                A principal diferença entre a estilização tradicional e o Tailwind CSS está no fluxo de trabalho. No modo clássico, é necessário alternar constantemente entre o arquivo HTML e a folha de estilo CSS para criar regras e nomes de classes. Com a abordagem do Tailwind, você constrói elementos totalmente estilizados diretamente na estrutura HTML utilizando utilitários prontos, reduzindo o tempo de desenvolvimento e mantendo o código padronizado.
+            </p>
+
+            <!-- Grid de 2 Colunas Lado a Lado (Emulando os dois cards com bordas em destaque do modelo) -->
+            <div class="grid md:grid-cols-2 gap-6">
+
+                <!-- Card 1: CSS Tradicional -->
+                <div class="bg-[#090710] border-2 border-pink-500 rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-xl font-bold text-pink-400 mb-4 pb-2 border-b border-pink-500/30">
+                            CSS Tradicional
+                        </h4>
+                        <pre class="text-sm text-purple-200/90 font-mono overflow-x-auto leading-relaxed"><code>/* style.css */
+.meu-botao {
+  background-color: #ec4899;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.meu-botao:hover {
+  background-color: #be185d;
+}</code></pre>
+                    </div>
                 </div>
-                <div class="w-full h-[260px] rounded-xl overflow-hidden border border-purple-800/40">
-                    <img src="" alt="Demonstração do Design System" class="w-full h-full object-cover">
+
+                <!-- Card 2: Tailwind CSS -->
+                <div class="bg-[#090710] border-2 border-pink-500 rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-xl font-bold text-pink-400 mb-4 pb-2 border-b border-pink-500/30">
+                            Tailwind CSS
+                        </h4>
+                        <pre class="text-sm text-pink-300 font-mono overflow-x-auto leading-relaxed"><code>&lt;!-- index.html --&gt;
+&lt;button class="bg-pink-500 
+               hover:bg-pink-700 
+               text-white 
+               py-3 px-6 
+               rounded-lg 
+               transition-all"&gt;
+  Clique Aqui
+&lt;/button&gt;</code></pre>
+                    </div>
                 </div>
+
             </div>
 
         </div>
 
     </div>
 </section>
-
-        <section id="exemplos" class="py-16 bg-[#130f24]/60 border-b border-purple-900/30">
-            <div class="w-[80%] mx-auto px-4">
-                <h2
-                    class="border-b border-gray-300 text-3xl font-bold text-pink-500 text-center mb-[60px] pb-4 flex items-center justify-center gap-3">
-                    <img src="img/seta-para-a-direita.svg" alt="Ícone Exemplos"
-                        class="brightness-0 invert w-7 h-7 shrink-0 object-contain">
-                    EXEMPLOS DE USO
-                </h2>
-            </div>
-            
-        </section>
 
         <section id="exemplos" class="py-16 bg-[#130f24]/60 border-b border-purple-900/30">
             <div class="w-[80%] mx-auto px-4 flex items-center justify-center gap-3">
